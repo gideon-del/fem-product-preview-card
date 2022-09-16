@@ -579,6 +579,10 @@ video {
   flex: 1 1 0%;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -789,8 +793,22 @@ video {
     display: grid;
   }
 
+  .md\:max-h-min {
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
+  }
+
+  .md\:max-h-96 {
+    max-height: 24rem;
+  }
+
   .md\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .md\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .md\:grid-cols-2 {
@@ -799,5 +817,32 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:self-stretch {
+    align-self: stretch;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
